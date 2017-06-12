@@ -1,0 +1,84 @@
+﻿
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+@{ 
+	string id = (string)ViewData["id"];
+	string ng = "";
+}
+@if (id == "1")
+{
+	ng = "designShineApp";
+}
+else if (id == "2")
+{
+	ng = "myApp";
+}
+<html lang="en" ng-app="@ng">
+	@if (id == "1")
+	{
+		<head >
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>store</title>
+			<base href="/Home/" />
+			<link href="~/App_Frond/DS/css/bootstrap.css" rel="stylesheet" />
+			<link href="~/App_Frond/DS/css/bootstrap-theme.css" rel="stylesheet" />
+			<link href="~/App_Frond/DS/css/index.css" rel="stylesheet" />
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<script src="~/App_Frond/DS/js/bootstrap.min.js"></script>
+			<script src="~/App_Frond/DS/js/angular.js"></script>
+			<script src="~/App_Frond/DS/js/angular-route.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-cookies.js"></script>
+			<script src="~/App_Frond/DS/app.module.js"></script>
+			<script src="~/App_Frond/DS/app.config.js"></script>
+			<script src="~/App_Frond/DS/components/myLogin/myLogin.module.js"></script>
+			<script src="~/App_Frond/DS/components/myLogin/myLogin.model.js"></script>
+			<script src="~/App_Frond/DS/components/myLogin/myLogin.component.js"></script>
+			<script src="~/App_Frond/DS/components/mySignin/mySignin.module.js"></script>
+			<script src="~/App_Frond/DS/components/mySignin/mySignin.model.js"></script>
+			<script src="~/App_Frond/DS/components/mySignin/mySignin.component.js"></script>
+			<script src="~/App_Frond/DS/components/myAnnoce/myAnnoce.module.js"></script>
+			<script src="~/App_Frond/DS/components/myAnnoce/myAnnoce.component.js"></script>
+			<script src="~/App_Frond/DS/components/myRegister/myRegister.module.js"></script>
+			<script src="~/App_Frond/DS/components/myRegister/myRegister.component.js"></script>
+			<script src="~/App_Frond/DS/components/mySuccess/mySuccess.module.js"></script>
+			<script src="~/App_Frond/DS/components/mySuccess/mySuccess.component.js"></script>
+			<script src="~/App_Frond/DS/components/myList/myList.module.js"></script>
+			<script src="~/App_Frond/DS/components/myList/myList.component.js"></script>
+		</head>
+	}
+	else if (id == "2")
+	{
+		<head>
+			<meta charset="utf-8">
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Person</title>
+			<base href="/Home/" />
+			<link href="~/App_Frond/Person/css/Site.css" rel="stylesheet" />
+			<link href="~/App_Frond/Person/css/bootstrap.min.css" rel="stylesheet" />
+			<script src="~/App_Frond/Person/js/modernizr-2.6.2.js"></script>
+			<script src="~/App_Frond/Person/js/jquery-1.10.2.min.js"></script>
+			<script src="~/App_Frond/Person/js/bootstrap.min.js"></script>
+			<script src="~/App_Frond/Person/js/angular.js"></script>
+			<script src="~/App_Frond/Person/js/angular-route.js"></script>
+			<script src="~/App_Frond/Person/app.js"></script>
+		</head>
+	}
+	else
+	{
+		<head>
+			<meta charset="utf-8">
+		</head>
+	}
+	<body>
+		<div class="container">
+			<div ng-view></div>
+		</div>
+	</body>
+</html>
