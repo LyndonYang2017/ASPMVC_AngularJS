@@ -60,9 +60,9 @@ angular.
         return service;
     }).
     component('myLogin', {
-        templateUrl: '/App_Frond/DS/components/myLogin/myLogin.template.html',
-        controller: [ '$scope', 'myFactoryLogin', 
-        function MyLoginController( $scope, myFactoryLogin) {
+        templateUrl: 'App_Frond/DS/components/myLogin/myLogin.template.html',
+        controller: [ '$scope', '$http', 'myFactoryLogin', 
+        function MyLoginController( $scope, $http, myFactoryLogin) {
             console.log("Login access!");
 
             //initialize user interface
@@ -73,6 +73,14 @@ angular.
             	if (myFactoryLogin.validation())
                     myFactoryLogin.login($scope);            	
             };
+
+            $scope.getSessionNumber = function () {
+                console.log("enter the get session number function");
+                $http.get('Person/GetSessionNumber').then(function (data) {
+                    $scope.mySessionNumber = data;
+                    alert($scope.mySessionNumber.data);
+                });
+            }
         	
         }]
   });

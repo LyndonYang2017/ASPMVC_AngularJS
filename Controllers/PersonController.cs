@@ -46,5 +46,15 @@ namespace ASPMVC004.Controllers
         {
             return Session["PersonName"].ToString();
         }
+
+        public string GetApplicationNumber()
+        {
+            return HttpContext.Application["totalNumber"].ToString();
+        }
+
+        public string GetSessionNumber()
+        {
+            return Session["myNumber"].ToString();
+        }
     }
 }

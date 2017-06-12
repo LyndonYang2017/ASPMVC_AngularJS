@@ -20,7 +20,7 @@ angular.
         return service;
     }).
   component('myList', {
-      templateUrl: '/App_Frond/DS/components/myList/myList.template.html',
+      templateUrl: 'App_Frond/DS/components/myList/myList.template.html',
       controller: ['$scope', 'commonService', 'myFactoryList', 
       function MyLoginController($scope, commonService, myFactoryList) {
         console.log("List access!");

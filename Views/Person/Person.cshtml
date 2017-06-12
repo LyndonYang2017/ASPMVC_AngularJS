@@ -8,21 +8,30 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Person</title>
-	<base href="/Person/" />
-	<link href="~/App_Frond/Person/css/Site.css" rel="stylesheet" />
-	<link href="~/App_Frond/Person/css/bootstrap.min.css" rel="stylesheet" />
-	<script src="~/App_Frond/Person/js/modernizr-2.6.2.js"></script>
-	<script src="~/App_Frond/Person/js/jquery-1.10.2.min.js"></script>
-	<script src="~/App_Frond/Person/js/bootstrap.min.js"></script>
-	<script src="~/App_Frond/Person/js/angular.js"></script>
-	<script src="~/App_Frond/Person/js/angular-route.js"></script>
-	<script src="~/App_Frond/Person/app.js"></script>
+	<base href="/ASPMVC004/" />
+	<link href="App_Frond/Person/css/Site.css" rel="stylesheet" />
+	<link href="App_Frond/Person/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="App_Frond/Person/js/modernizr-2.6.2.js"></script>
+	<script src="App_Frond/Person/js/jquery-1.10.2.min.js"></script>
+	<script src="App_Frond/Person/js/bootstrap.min.js"></script>
+	<script src="App_Frond/Person/js/angular.js"></script>
+	<script src="App_Frond/Person/js/angular-route.js"></script>
+	<script src="App_Frond/Person/app.js"></script>
 </head>
 <body>
 
 	<div class="container">
 		<div ng-view></div>
 	</div>
-
+	@{ 
+		string myName = "Lin Yang";
+		//string keyWord = "confrim";
+	}
+	<script type="text/javascript">
+		function alertMyName() {
+			alert("Hello World! My name is " + "@myName");
+			
+		}
+	</script>
 </body>
 </html>

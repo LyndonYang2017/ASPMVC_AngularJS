@@ -16,7 +16,7 @@
     <RootNamespace>ASPMVC004</RootNamespace>
     <AssemblyName>ASPMVC004</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -247,7 +247,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>57674</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:57674/</IISUrl>
+          <IISUrl>http://localhost/ASPMVC004</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -113,7 +113,7 @@ angular.
         return service;
     }).
   component('myRegister', {
-      templateUrl: '/App_Frond/DS/components/myRegister/myRegister.template.html',
+      templateUrl: 'App_Frond/DS/components/myRegister/myRegister.template.html',
       controller: ['$scope', 'commonService', 'myFactoryRegister',
         function MymyRegisterController($scope, commonService, myFactoryRegister) {
         console.log("Register OK!");

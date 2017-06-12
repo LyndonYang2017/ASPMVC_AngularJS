@@ -17,7 +17,7 @@ angular.
         return service;
     }).
   component('mySuccess', {
-      templateUrl: '/App_Frond/DS/components/mySuccess/mySuccess.template.html',
+      templateUrl: 'App_Frond/DS/components/mySuccess/mySuccess.template.html',
       controller: ['$scope', 'commonService', 'myFactorySuccess',
         function mySuccessController($scope, commonService, myFactorySuccess) {
             console.log("Success OK");  

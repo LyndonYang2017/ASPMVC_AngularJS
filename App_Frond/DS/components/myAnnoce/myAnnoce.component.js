@@ -16,7 +16,7 @@ angular.
         return service;
     }).
   component('myAnnoce', {
-      templateUrl: '/App_Frond/DS/components/myAnnoce/myAnnoce.template.html',
+      templateUrl: 'App_Frond/DS/components/myAnnoce/myAnnoce.template.html',
       controller: ['$scope', 'commonService', 'myFactoryAnnoce',  
         function MyAnnoceController($scope, commonService, myFactoryAnnoce) {
             console.log("Annoce access!");   

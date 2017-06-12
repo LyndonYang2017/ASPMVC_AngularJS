@@ -62,7 +62,7 @@ angular.
         return service;
     }).
     component('mySignin', {
-        templateUrl: '/App_Frond/DS/components/mySignin/mySignin.template.html',
+        templateUrl: 'App_Frond/DS/components/mySignin/mySignin.template.html',
         controller: ['$scope', 'commonService', 'myFactorySignin',
             function MySigninController($scope, commonService, myFactorySignin) {
             console.log("Sign in access!");

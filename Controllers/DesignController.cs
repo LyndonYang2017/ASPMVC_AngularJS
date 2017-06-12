@@ -13,5 +13,11 @@ namespace ASPMVC004.Controllers
         {
             return View();
         }
+
+
+        //public ActionResult DesignShineCopy()
+        //{
+        //    return View();
+        //}
     }
 }
